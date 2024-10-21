@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Template</title>
+    <link rel="stylesheet" href="/styles/global-styles.css" />
+    <link rel="stylesheet" href="/styles/home-styles.css" />
+
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+    <nav>
+      <header id="cs-navigation">
+        <div class="cs-container">
+          <!--Nav Logo-->
+          <a href="/index.html" class="cs-logo" aria-label="back to home"
+            >StitchGym
+          </a>
+          <!--Navigation List-->
+          <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+              <div class="cs-box" aria-hidden="true">
+                <span class="cs-line cs-line1" aria-hidden="true"></span>
+                <span class="cs-line cs-line2" aria-hidden="true"></span>
+                <span class="cs-line cs-line3" aria-hidden="true"></span>
+              </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+              <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                <li class="cs-li">
+                  <a href="/index.html" class="cs-li-link cs-active"> Home </a>
+                </li>
+                <li class="cs-li">
+                  <a href="/services.html" class="cs-li-link"> Services </a>
+                </li>
+                <li class="cs-li">
+                  <a href="/about.html" class="cs-li-link"> About Us </a>
+                </li>
+                <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                <li class="cs-li cs-dropdown" tabindex="0">
+                  <span class="cs-li-link">
+                    Weight Loss
+                    <img
+                      class="cs-drop-icon"
+                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg"
+                      alt="dropdown icon"
+                      width="15"
+                      height="15"
+                      decoding="async"
+                      aria-hidden="true" />
+                  </span>
+                  <ul class="cs-drop-ul">
+                    <li class="cs-drop-li">
+                      <a href="" class="cs-li-link cs-drop-link">Semaglutide</a>
+                    </li>
+                    <li class="cs-drop-li">
+                      <a href="" class="cs-li-link cs-drop-link"
+                        >Tirezapetide</a
+                      >
+                    </li>
+                    <li class="cs-drop-li">
+                      <a href="" class="cs-li-link cs-drop-link">Semaglutide</a>
+                    </li>
+                    <li class="cs-drop-li">
+                      <a href="" class="cs-li-link cs-drop-link"
+                        >Tirezapetide</a
+                      >
+                    </li>
+                    <li class="cs-drop-li">
+                      <a href="" class="cs-li-link cs-drop-link">Semaglutide</a>
+                    </li>
+                    <li class="cs-drop-li">
+                      <a href="" class="cs-li-link cs-drop-link"
+                        >Tirezapetide</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="cs-li">
+                  <a href="/contact.html" class="cs-li-link"> FAQ </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <a href="/contact.html" class="cs-button-solid cs-nav-button"
+            >Contact Us</a
+          >
+          <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+          <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+        </div>
+      </header>
+    </nav>
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-1856">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Best Gym Of The City For Fitness</span>
+          <h1 class="cs-title">You Can Boost Your Strength</h1>
+          <p class="cs-text">
+            Develop confidence, composure under pressure and the discipline
+            needed to be a champ. This is the club you’ve been looking for.
+          </p>
+          <a href="" class="cs-button-solid">Read More</a>
+          <img
+            class="cs-content-graphic"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-graphic.svg"
+            alt="graphic"
+            height="1075"
+            width="1135"
+            loading="lazy"
+            decoding="async" />
+        </div>
+      </div>
+
+      <!-- Background Image -->
+      <picture class="cs-background">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png
+          " />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png
+          " />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png"
+          alt="field"
+          width="1920"
+          height="1200"
+          aria-hidden="true" />
+      </picture>
+
+      <img
+        class="cs-graphic cs-graphic-light"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-splatter.svg"
+        alt="graphic"
+        height="161"
+        width="1920"
+        loading="lazy"
+        decoding="async" />
+      <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+      <img
+        class="cs-graphic cs-graphic-dark"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-mode-splatter2.svg"
+        alt="graphic"
+        height="161"
+        width="1920"
+        loading="lazy"
+        decoding="async" />
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Services                   -->
+    <!-- ============================================ -->
+
+    <section id="services-1847">
+      <div class="cs-container">
+        <div class="cs-image-group">
+          <!--Top left image-->
+          <picture class="cs-picture cs-picture1">
+            <!--Mobile Image-->
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png
+              " />
+            <!--Tablet and above Image-->
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png
+              " />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png"
+              alt="appliance"
+              width="364"
+              height="375" />
+          </picture>
+          <!--Bottom right image-->
+          <picture class="cs-picture cs-picture2">
+            <!--Mobile Image-->
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png
+              " />
+            <!--Tablet and above Image-->
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png
+              " />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png"
+              alt="appliance"
+              width="388"
+              height="388" />
+          </picture>
+          <picture class="cs-floater">
+            <img
+              class="cs-floater-icon"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/weights.svg"
+              alt="icon"
+              width="59"
+              height="48" />
+          </picture>
+        </div>
+        <div class="cs-content">
+          <span class="cs-topper">Our Services</span>
+          <h2 class="cs-title">What Services You Can Get From Us</h2>
+          <ul class="cs-ul">
+            <li class="cs-li">
+              <a class="cs-link" href="">
+                <h3 class="cs-h3">Kick Boxing</h3>
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-white-arrow.svg"
+                  alt="icon"
+                  width="32"
+                  height="32" />
+              </a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-link" href="">
+                <h3 class="cs-h3">Personal Training</h3>
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-white-arrow.svg"
+                  alt="icon"
+                  width="32"
+                  height="32" />
+              </a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-link" href="">
+                <h3 class="cs-h3">Body Builder</h3>
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-white-arrow.svg"
+                  alt="icon"
+                  width="32"
+                  height="32" />
+              </a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-link" href="">
+                <h3 class="cs-h3">Group Workout</h3>
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-white-arrow.svg"
+                  alt="icon"
+                  width="32"
+                  height="32" />
+              </a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-link" href="">
+                <h3 class="cs-h3">Muscle Building</h3>
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-white-arrow.svg"
+                  alt="icon"
+                  width="32"
+                  height="32" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Why Choose Us                 -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-1876">
+      <div class="cs-container">
+        <div class="cs-video-wrapper">
+          <!--Compress your video and upload it to a CDN like Digital Oceans Spaces so the video file doesn't cause load time issues. You can also remove the video tag and uncomment the picture tag to use a image instead of a video. Don't forget to remove the cs-play button!-->
+          <video
+            loading="lazy"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Videos/gym.mp4"
+            autoplay="false"></video>
+          <!-- <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.jpg" alt="body builder" width="630" height="877">
+                </picture> -->
+          <button class="cs-play" aria-label="click to play video">
+            <img
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/play-right.svg"
+              alt="play icon"
+              class="cs-icon"
+              width="24"
+              height="24"
+              aria-hidden="true"
+              decoding="async" />
+          </button>
+        </div>
+        <div class="cs-content">
+          <span class="cs-topper">Why Choose Us</span>
+          <h2 class="cs-title">
+            We Are Pushing The Limit Of Your Core Strength
+          </h2>
+          <p class="cs-text">
+            We understand that your lifestyle changes, that’s why we’ve made
+            fitness straightforward and stress free. Join today on a no lock-in
+            contract membership and start achieving your fitness goals. We value
+            flexibility at Jetts, with unlimited 24/7 access.
+          </p>
+          <ul class="cs-ul">
+            <li class="cs-li">
+              <img
+                class="cs-check-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg"
+                alt="checkmark"
+                width="20"
+                height="20" />
+              22,000 square feet Gym
+            </li>
+            <li class="cs-li">
+              <img
+                class="cs-check-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg"
+                alt="checkmark"
+                width="20"
+                height="20" />
+              State of the Art Equipment
+            </li>
+            <li class="cs-li">
+              <img
+                class="cs-check-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg"
+                alt="checkmark"
+                width="20"
+                height="20" />
+              Series Results Based on Training
+            </li>
+            <li class="cs-li">
+              <img
+                class="cs-check-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg"
+                alt="checkmark"
+                width="20"
+                height="20" />
+              Programs for weight loss
+            </li>
+          </ul>
+          <a class="cs-button-solid" href="">Enroll Now</a>
+          <picture class="cs-picture cs-picture2">
+            <!--Mobile Image-->
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png
+              " />
+            <!--Tablet and above Image-->
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png
+              " />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png"
+              alt="people"
+              width="608"
+              height="406" />
+          </picture>
+        </div>
+      </div>
+      <!--White Splash Graphic-->
+      <img
+        class="cs-graphic cs-light"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/f7-splatter.svg"
+        alt="graphic"
+        height="161"
+        width="1920"
+        loading="lazy"
+        decoding="async" />
+      <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+      <img
+        class="cs-graphic cs-dark"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-mode-splatter2.svg"
+        alt="graphic"
+        height="161"
+        width="1920"
+        loading="lazy"
+        decoding="async" />
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews-1832">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Testimonials</span>
+          <h2 class="cs-title">Our Members Testimonials</h2>
+        </div>
+        <div class="cs-flex-group">
+          <div class="cs-image-group">
+            <picture class="cs-picture">
+              <!--Mobile Image-->
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/reviewer.png
+                " />
+              <!--Tablet and above Image-->
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/reviewer.png
+                " />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/reviewer.png"
+                alt="person"
+                width="570"
+                height="680" />
+            </picture>
+
+            <!--White SVG Mask. Download the image and change the fill color to match the color of the section background below it-->
+            <img
+              class="cs-mask cs-light"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-paint-stroke.svg"
+              alt="white splatter"
+              width="700"
+              height="666" />
+            <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+            <img
+              class="cs-mask cs-dark"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-paint-stroke.svg"
+              alt="white splatter"
+              width="700"
+              height="666" />
+          </div>
+          <div class="cs-review-group">
+            <!--Stars-->
+            <img
+              class="cs-stars"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
+              alt="quotes"
+              width="97"
+              height="80"
+              aria-hidden="true" />
+            <p class="cs-review-text">
+              ”Great gym! A new gym with modern equipment and facilities makes
+              training so much easier. Always willing to help you with your
+              training”
+            </p>
+            <span class="cs-name">Britney Allison</span>
+            <span class="cs-job">Founder of Yokoloko</span>
+            <!--Quote-->
+            <img
+              class="cs-quote"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-quote.svg"
+              alt="quotes"
+              width="97"
+              height="80"
+              aria-hidden="true" />
+          </div>
+        </div>
+      </div>
+      <!--Texture Graphic-->
+      <picture class="cs-background">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 1023px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture-m.png
+          " />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 1024px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png
+          " />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png"
+          alt="dotted texture"
+          width="1920"
+          height="600" />
+      </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <!--NOTE: Make sure the section above this footer has the same background color as the footer for a seamless trasition between them-->
+
+    <footer id="cs-footer-1763">
+      <!--Contact Info-->
+      <div class="cs-card-group">
+        <div class="cs-card">
+          <picture class="cs-picture">
+            <img
+              class="cs-icon"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-location-pin.svg"
+              alt="location"
+              loading="lazy"
+              decoding="async"
+              height="32"
+              width="32" />
+          </picture>
+          <div class="cs-flex">
+            <h3 class="cs-h3">Location</h3>
+            <span class="cs-card-info"
+              >234-244 Stockwell Rd, 4th Floor Brixton, SW9 9SP</span
+            >
+          </div>
+        </div>
+        <div class="cs-card">
+          <picture class="cs-picture">
+            <img
+              class="cs-icon"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-clock.svg"
+              alt="clock"
+              loading="lazy"
+              decoding="async"
+              height="32"
+              width="32" />
+          </picture>
+          <div class="cs-flex">
+            <h3 class="cs-h3">Working Hours</h3>
+            <span class="cs-card-info">Monday - Saturday: 10:00 - 20:00 </span>
+            <span class="cs-card-info">Sunday: Closed</span>
+          </div>
+        </div>
+        <div class="cs-card">
+          <picture class="cs-picture">
+            <img
+              class="cs-icon"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-call.svg"
+              alt="phone"
+              loading="lazy"
+              decoding="async"
+              height="32"
+              width="32" />
+          </picture>
+          <div class="cs-flex">
+            <h3 class="cs-h3">Contact</h3>
+            <a href="" class="cs-card-info">M: +99 40 70 929 </a>
+            <a href="" class="cs-card-info">E: info@stitchgym.com</a>
+          </div>
+        </div>
+        <img
+          class="cs-graphic cs-light"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture.svg"
+          alt="graphic"
+          height="151"
+          width="1920"
+          loading="lazy"
+          decoding="async" />
+        <img
+          class="cs-graphic cs-dark"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture-dark.svg"
+          alt="graphic"
+          height="151"
+          width="1920"
+          loading="lazy"
+          decoding="async" />
+      </div>
+      <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+          <a aria-label="go back to home" class="cs-logo" href="">
+            <img
+              class="cs-logo-img"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-logo-horizontal.png"
+              alt="logo"
+              width="240"
+              height="32" />
+          </a>
+          <p class="cs-text">
+            Welcome to Stitch Fitness! We believe that true wellness encompasses
+            the mind, body & soul. We are here to support and guide you every
+            step of the way.
+          </p>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+          <span class="cs-header">Our Services</span>
+          <ul class="cs-ul">
+            <li class="cs-li">
+              <a class="cs-link" href="">Personal Training</a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-link" href="">Group Workout</a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-link" href="">Muscle Building</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+          <span class="cs-header">Useful Links</span>
+          <ul class="cs-ul">
+            <li class="cs-li">
+              <a class="cs-link" href="">About Stitch Gym</a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-link" href="">Membership Details</a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-link" href="">Class Timetable</a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-link" href="">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cs-contact">
+          <div class="cs-contact-info">
+            <span class="cs-topper">Call us anytime</span>
+            <a href="" class="cs-contact-link">+123 458 789412</a>
+          </div>
+          <div class="cs-contact-info">
+            <span class="cs-topper">Visit our location</span>
+            <a href="" class="cs-contact-link"
+              >17110 116th Ave SE Unit Renton, WA 38058-5055</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="cs-bottom">
+        <span class="cs-credit">
+          © Copyright 2024 -
+          <a href="" class="cs-credit-link" target="_blank">Stitch Gym</a>
+        </span>
+        <div class="cs-bottom-links">
+          <a href="" class="cs-bottom-link">Terms & Conditions</a>
+          <a href="" class="cs-bottom-link">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
